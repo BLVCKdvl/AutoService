@@ -1,0 +1,15 @@
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.csproj.AssemblyReference.cache
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.AssemblyInfoInputs.cache
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.AssemblyInfo.cs
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.csproj.CoreCompileInputs.cache
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\bin\Debug\net6.0\AutoServiceCSharp.exe
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\bin\Debug\net6.0\AutoServiceCSharp.deps.json
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\bin\Debug\net6.0\AutoServiceCSharp.runtimeconfig.json
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\bin\Debug\net6.0\AutoServiceCSharp.dll
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\bin\Debug\net6.0\AutoServiceCSharp.pdb
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.dll
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\refint\AutoServiceCSharp.dll
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.pdb
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\AutoServiceCSharp.genruntimeconfig.cache
+D:\--UNIVERSITY--\SEMESTER-2\ТРПО\лаб 2\AutoServiceCSharp\obj\Debug\net6.0\ref\AutoServiceCSharp.dll
