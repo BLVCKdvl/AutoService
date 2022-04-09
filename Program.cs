@@ -17,7 +17,26 @@ public class Project
     {
         Note[] userlist = new Note[100];
         int numberOfNotes = FillUserNotesReturnsNumberOfNotes(userlist);
+
         return 0;
+    }
+
+    public static void WriteOnFile(Note[] userList, int numberOfNotes)
+    {
+        //StreamWriter print = new StreamWriter("UserNotes.txt", false);
+        //for (int i = 0; i < numberOfNotes; i++)
+        //{
+        //    print.Write(userList[i].userInitials + "\n" +
+        //                userList[i].markAuto + "\n" +
+        //                userList[i].workType + "\n" +
+        //                userList[i].dateOfAcceptiom + "\n" +
+        //                userList[i].price + "\n" +
+        //                userList[i].status);
+        //    print.WriteLine();
+        //}
+
+        //print.Close();
+        throw new NotImplementedException();
     }
 
     public static int FillUserNotesReturnsNumberOfNotes(Note[] userList)
