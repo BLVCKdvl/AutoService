@@ -22,17 +22,25 @@ public class Project
 
     public static int FillUserNotesReturnsNumberOfNotes(Note[] userList)
     {
-        string s = File.ReadAllText("UserNotesInput.txt");
-        // Console.WriteLine(s);
-        int i = 0;
-        while (s[i] != '.')
+        string fileString = File.ReadAllText("UserNotes.txt");
+        string[] stringList = fileString.Split(".\r\n");
+        int tempIndex = 0;
+        for (int i = 0; i < stringList.Length / 6; ++i)
         {
-            ++i;
+            userList[i].userInitials = stringList[tempIndex]; 
+            ++tempIndex;
+            userList[i].markAuto = stringList[tempIndex];
+            ++tempIndex;
+            userList[i].workType = stringList[tempIndex]; 
+            ++tempIndex;
+            userList[i].dateOfAcceptiom = stringList[tempIndex];
+            ++tempIndex;
+            userList[i].price = stringList[tempIndex]; 
+            ++tempIndex;
+            userList[i].status = stringList[tempIndex];
+            ++tempIndex;
         }
 
-        StreamWriter print = new StreamWriter("UserNotesOutput.txt", true);
-        print.Write(s[0..i]);
-
-        return 0;        
+        return stringList.Length / 6;
     }
 }
