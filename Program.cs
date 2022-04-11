@@ -15,51 +15,68 @@ public class Project
 
     public static int Main()
     {
-        Note[] userlist = new Note[100];
-        int numberOfNotes = FillUserNotesReturnsNumberOfNotes(userlist);
+        Note[] userList = new Note[100];
+        int numberOfNotes = FillUserNotesReturnsNumberOfNotes(userList);
+        // userList[0].price = "9999999";
+        // userList[2].status = "hug";
+        WriteOnFile(userList, numberOfNotes);
 
         return 0;
     }
 
     public static void WriteOnFile(Note[] userList, int numberOfNotes)
     {
-        //StreamWriter print = new StreamWriter("UserNotes.txt", false);
-        //for (int i = 0; i < numberOfNotes; i++)
-        //{
-        //    print.Write(userList[i].userInitials + "\n" +
-        //                userList[i].markAuto + "\n" +
-        //                userList[i].workType + "\n" +
-        //                userList[i].dateOfAcceptiom + "\n" +
-        //                userList[i].price + "\n" +
-        //                userList[i].status);
-        //    print.WriteLine();
-        //}
+        string[] structArrayInfo = new string[6 * numberOfNotes];
+        int tempIndex = 0, listTempIndex = 0;
+        while (tempIndex < numberOfNotes * 6 && listTempIndex < numberOfNotes)
+        {
+            structArrayInfo[tempIndex] = userList[listTempIndex].userInitials;
+            ++tempIndex;
+            structArrayInfo[tempIndex] = userList[listTempIndex].markAuto;
+            ++tempIndex;
+            structArrayInfo[tempIndex] = userList[listTempIndex].workType;
+            ++tempIndex;
+            structArrayInfo[tempIndex] = userList[listTempIndex].dateOfAcceptiom;
+            ++tempIndex;
+            structArrayInfo[tempIndex] = userList[listTempIndex].price;
+            ++tempIndex;
+            structArrayInfo[tempIndex] = userList[listTempIndex].status;
+            ++tempIndex; ++listTempIndex;
+        }
 
-        //print.Close();
-        throw new NotImplementedException();
+        File.WriteAllLines("UserNotes.txt", structArrayInfo);
     }
 
     public static int FillUserNotesReturnsNumberOfNotes(Note[] userList)
     {
-        string fileString = File.ReadAllText("UserNotes.txt");
-        string[] stringList = fileString.Split(".\r\n");
+        string[] stringList = File.ReadAllLines("UserNotes.txt");
         int tempIndex = 0;
         for (int i = 0; i < stringList.Length / 6; ++i)
         {
-            userList[i].userInitials = stringList[tempIndex]; 
+            userList[i].userInitials = stringList[tempIndex];
             ++tempIndex;
             userList[i].markAuto = stringList[tempIndex];
             ++tempIndex;
-            userList[i].workType = stringList[tempIndex]; 
+            userList[i].workType = stringList[tempIndex];
             ++tempIndex;
             userList[i].dateOfAcceptiom = stringList[tempIndex];
             ++tempIndex;
-            userList[i].price = stringList[tempIndex]; 
+            userList[i].price = stringList[tempIndex];
             ++tempIndex;
             userList[i].status = stringList[tempIndex];
             ++tempIndex;
         }
 
         return stringList.Length / 6;
+    }
+
+    public static void FillStructArray(string[] structArrayInfo, Note oneNote)
+    {
+        structArrayInfo[0] = oneNote.userInitials;
+        structArrayInfo[1] = oneNote.markAuto;
+        structArrayInfo[2] = oneNote.workType;
+        structArrayInfo[3] = oneNote.dateOfAcceptiom;
+        structArrayInfo[4] = oneNote.price;
+        structArrayInfo[5] = oneNote.status;
     }
 }
